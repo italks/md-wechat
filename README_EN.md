@@ -163,6 +163,44 @@ Options:
 | Inline Styles | ✅ |
 | Configuration Extraction & Reuse | ✅ |
 
+## Comparison with doocs/md
+
+This project is inspired by [doocs/md](https://github.com/doocs/md). Here's a feature comparison:
+
+| Feature | doocs/md | md-wechat |
+|---------|:--------:|:---------:|
+| **Runtime Environment** | Browser/Online | Node.js CLI |
+| **Usage** | Online Editor | CLI Batch Processing |
+| Basic Markdown | ✅ | ✅ |
+| GFM Extensions | ✅ | ✅ |
+| Code Syntax Highlighting | ✅ | ✅ |
+| Mac-style Code Blocks | ✅ | ✅ |
+| Math Formulas (LaTeX) | ✅ | ✅ KaTeX |
+| Mermaid Diagrams | ✅ | ✅ |
+| PlantUML Diagrams | ✅ | ⚠️ Partial |
+| Infographic Charts | ✅ | ⚠️ Partial |
+| Strikethrough/Highlight/Underline | ✅ | ✅ |
+| Ruby Annotations | ✅ | ✅ |
+| **Configuration Extraction** | ❌ | ✅ |
+| **Configuration Reuse** | ❌ | ✅ |
+| **Batch Processing** | ❌ | ✅ |
+| **CLI Automation** | ❌ | ✅ |
+| **Auto Dependency Installation** | ❌ | ✅ |
+
+### Use Cases
+
+**doocs/md is better for:**
+- Real-time online editing and preview
+- Quick styling of single articles
+- Visual operations
+
+**md-wechat is better for:**
+- Batch article processing
+- Automated workflows
+- CI/CD integration
+- Style configuration reuse
+- Team collaboration on styling
+
 ## Project Structure
 
 ```
