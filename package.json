@@ -1,6 +1,6 @@
 {
   "name": "md-wechat",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Markdown to WeChat Official Account HTML converter",
   "main": "scripts/convert.js",
   "type": "module",
