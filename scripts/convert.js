@@ -714,6 +714,12 @@ class MDToWechatConverter {
     // 4. 包装 HTML
     html = this.wrapHTML(html, css);
     
+    // 5. 清理不可见控制字符（安全处理）
+    html = html
+      .replace(/[\u200B\u200C\u200D\u2060]/g, '') // 移除零宽字符
+      .replace(/\u00A0/g, ' ')  // 替换不换行空格为普通空格
+      .replace(/^\uFEFF/, '');  // 移除 BOM
+    
     return html;
   }
   

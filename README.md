@@ -27,6 +27,8 @@ cd md-wechat
 npm install
 ```
 
+> **安全建议**：首次使用建议检查 `package.json` 中的依赖，或在隔离环境中运行。
+
 ### 基础用法
 
 ```bash

@@ -39,12 +39,24 @@ description: 将 Markdown 文档转换为微信公众号格式的技能。当用
 
 ### 1. 环境准备
 
-**触发条件**：首次使用时
+**前提条件**：Node.js >= 18.0.0
 
-**执行步骤**：
-1. 检查 Node.js 环境（需要 >= 18.0.0）
-2. 检查并安装依赖包
-3. 如果未安装，自动执行 `npm install`
+**推荐安装方式（更安全）**：
+```bash
+# 手动安装依赖，可审查 package.json
+npm install
+
+# 然后运行转换
+node scripts/convert.js article.md --no-auto-install
+```
+
+**自动安装方式**：
+```bash
+# 脚本会自动检测并安装缺失依赖
+node scripts/convert.js article.md
+```
+
+> **安全提示**：建议在隔离环境（Docker/沙盒）中首次运行，或使用 `--no-auto-install` 参数手动控制依赖安装。
 
 ### 2. 转换流程
 
